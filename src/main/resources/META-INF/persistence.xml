@@ -5,8 +5,8 @@
              version="3.0">
 
     <persistence-unit name="mahi">
-        <class>com.neoteric.java.jpa.EmployeeEntity</class>
-        <class>com.neoteric.java.jpa.ProjectEntity</class>
+        <class>com.practices.perfect.EmployeeEntity</class>
+        <class>com.practices.perfect.DepartmentEntity</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mahi"/>

@@ -20,6 +20,9 @@ public class DepartmentService {
 
 
       //  select p from DepartmentEntity p join fetch p.employeeList e where e.department.id = p.id
+        //select p from DepartmentEntity p right join fetch p.employeeList e where e.department.id = p.id
+        //select p from DepartmentEntity p  join fetch p.employeeList e where e.department.id = p.id
+
 
         List<DepartmentEntity> resultList = query.getResultList();
         System.out.println("Result list size: " + resultList.size());

@@ -18,7 +18,7 @@ public class JpaService {
         //  select * from departments inner join employees on departments.departmentid=employees.forkey_dep; departmentEntity
        // Query query = entityManager.createQuery("select p from EmployeeEntity as p inner join departmentEntity as e where p.forkey_dep=e.DepartmentID");
        // Query query = entityManager.createQuery("select p from EmployeeEntity as p");
-       Query query = entityManager.createQuery("select p from EmployeeEntity as p inner join fetch p.departmentEntity as e where e.DepartmentID = p.departmentEntity.DepartmentID");
+       Query query = entityManager.createQuery("select p from EmployeeEntity as p inner join fetch p.departmentEntity as e where e.DepartmentID = p. .DepartmentID");
        // select p from EmployeeEntity as p inner join departmentEntity as e where p.forkey_dep=e.DepartmentID
 
         //  Query query = entityManager.createQuery("SELECT d FROM EmployeeEntity d JOIN d.employeeList e WHERE e.DepartmentID = d.forkey_dep");
